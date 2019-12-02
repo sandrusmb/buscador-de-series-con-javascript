@@ -4,10 +4,17 @@ PASOS
 
 [x]Dibujar el diagrama
 
-[] HTML y CSS
+[x] HTML y CSS
 [x]Limpiar archivos del kit
 
+[x]pintar una card
+[x]pintar todas las cards
+[x]quitar los puntos de los li
+[]imagen por defecto cuando esté vacía
+
 ---
+
+## []poner imagen por defecto si no hay imagen
 
 ![Adalab](_src/assets/images/logo-adalab-80px.png)
 

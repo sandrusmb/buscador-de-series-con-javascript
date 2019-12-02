@@ -8,26 +8,35 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <!-- formulario -->
-    <div class="container">
-      <form action="">
-        <input type="text" class="" />
-        <button>Buscar</button>
-      </form>
+    <!-- título de la página -->
+    <header class="header">
+      <h1 class="header__title">Buscador de series</h1>
+    </header>
 
-      <!-- listado de favoritos -->
-      <aside>
-        <h2>Mis series</h2>
-        <ul>
-          <li></li>
-        </ul>
-      </aside>
-    </div>
-    <!-- listado de pelis -->
-    <main>
-      <h1>Buscador de series</h1>
-      <ul class="movie__list"></ul>
+    <main class="global">
+      <div class="container">
+        <!-- formulario -->
+        <form method="" action="" class="container__form">
+          <input type="text" class="container__form__input" />
+          <button class="container__form__button">Buscar</button>
+        </form>
+
+        <!-- listado de favoritos -->
+        <aside class="aside">
+          <h2 class="aside__title">Mis series favoritas</h2>
+          <ul class="aside__list">
+            <li></li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- listado de pelis -->
+      <section class="movie">
+        <ul class="movie__list"></ul>
+      </section>
     </main>
+
+    <!-- scripts -->
     <script type="text/javascript" src="./assets/js/data.js"></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>

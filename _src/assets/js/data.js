@@ -1,28 +1,146 @@
 const data = [
   {
-    score: 17.240067,
+    score: 17.797922,
     show: {
-      id: 139,
-      url: "http://www.tvmaze.com/shows/139/girls",
-      name: "Girls",
-      type: "Scripted",
-      language: "English",
-      genres: ["Drama", "Romance"],
-      status: "Ended",
-      runtime: 30,
-      premiered: "2012-04-15",
-      officialSite: "http://www.hbo.com/girls",
+      id: 45252,
+      url: "http://www.tvmaze.com/shows/45252/44-cats",
+      name: "44 Cats",
+      type: "Animation",
+      language: "Italian",
+      genres: ["Comedy", "Adventure", "Children"],
+      status: "Running",
+      runtime: 15,
+      premiered: "2018-11-11",
+      officialSite: "https://www.44cats.tv/it",
       schedule: {
-        time: "22:00",
+        time: "",
+        days: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ]
+      },
+      rating: {
+        average: null
+      },
+      weight: 0,
+      network: null,
+      webChannel: {
+        id: 254,
+        name: "RaiPlay",
+        country: {
+          name: "Italy",
+          code: "IT",
+          timezone: "Europe/Rome"
+        }
+      },
+      externals: {
+        tvrage: null,
+        thetvdb: 363487,
+        imdb: "tt9699148"
+      },
+      image: {
+        medium:
+          "http://static.tvmaze.com/uploads/images/medium_portrait/228/571843.jpg",
+        original:
+          "http://static.tvmaze.com/uploads/images/original_untouched/228/571843.jpg"
+      },
+      summary:
+        "<p>Four cats named Lampo, Milady, Pilou, and Polpetta get taken in by Granny Pina and form a band and meet 40 other cats.</p>",
+      updated: 1575109571,
+      _links: {
+        self: {
+          href: "http://api.tvmaze.com/shows/45252"
+        },
+        previousepisode: {
+          href: "http://api.tvmaze.com/episodes/1766457"
+        }
+      }
+    }
+  },
+  {
+    score: 12.805133,
+    show: {
+      id: 3756,
+      url: "http://www.tvmaze.com/shows/3756/8-out-of-10-cats",
+      name: "8 Out of 10 Cats",
+      type: "Panel Show",
+      language: "English",
+      genres: ["Comedy"],
+      status: "Running",
+      runtime: 50,
+      premiered: "2005-06-03",
+      officialSite: "http://www.channel4.com/programmes/8-out-of-10-cats",
+      schedule: {
+        time: "21:00",
         days: ["Sunday"]
       },
       rating: {
-        average: 6.8
+        average: 7.8
       },
-      weight: 89,
+      weight: 87,
       network: {
-        id: 8,
-        name: "HBO",
+        id: 41,
+        name: "E4",
+        country: {
+          name: "United Kingdom",
+          code: "GB",
+          timezone: "Europe/London"
+        }
+      },
+      webChannel: null,
+      externals: {
+        tvrage: 7074,
+        thetvdb: 79556,
+        imdb: "tt0465315"
+      },
+      image: {
+        medium:
+          "http://static.tvmaze.com/uploads/images/medium_portrait/19/47775.jpg",
+        original:
+          "http://static.tvmaze.com/uploads/images/original_untouched/19/47775.jpg"
+      },
+      summary:
+        "<p>A topical news panel show based on statistics and opinion polls.</p>",
+      updated: 1573607852,
+      _links: {
+        self: {
+          href: "http://api.tvmaze.com/shows/3756"
+        },
+        previousepisode: {
+          href: "http://api.tvmaze.com/episodes/1620305"
+        }
+      }
+    }
+  },
+  {
+    score: 12.225062,
+    show: {
+      id: 14716,
+      url: "http://www.tvmaze.com/shows/14716/cats-101",
+      name: "Cats 101",
+      type: "Documentary",
+      language: "English",
+      genres: ["Nature"],
+      status: "Ended",
+      runtime: 60,
+      premiered: "2008-12-06",
+      officialSite: null,
+      schedule: {
+        time: "",
+        days: ["Saturday"]
+      },
+      rating: {
+        average: null
+      },
+      weight: 0,
+      network: {
+        id: 92,
+        name: "Animal Planet",
         country: {
           name: "United States",
           code: "US",
@@ -31,41 +149,151 @@ const data = [
       },
       webChannel: null,
       externals: {
-        tvrage: 30124,
-        thetvdb: 220411,
-        imdb: "tt1723816"
+        tvrage: null,
+        thetvdb: 189111,
+        imdb: "tt1538039"
       },
       image: {
         medium:
-          "http://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg",
+          "http://static.tvmaze.com/uploads/images/medium_portrait/112/281515.jpg",
         original:
-          "http://static.tvmaze.com/uploads/images/original_untouched/31/78286.jpg"
+          "http://static.tvmaze.com/uploads/images/original_untouched/112/281515.jpg"
       },
       summary:
-        "<p>This Emmy winning series is a comic look at the assorted humiliations and rare triumphs of a group of girls in their 20s.</p>",
-      updated: 1573153623,
+        "<p>Discover everything about your feline friend in <b>Cats 101</b>. This series highlights the frisky, feisty and contagiously cute behaviors that helped these cheeky creatures overtake dogs as the most popular pet in America. Learn about the various breeds, their genetic history, famous felines and quirky cat facts.</p>",
+      updated: 1495263605,
       _links: {
         self: {
-          href: "http://api.tvmaze.com/shows/139"
+          href: "http://api.tvmaze.com/shows/14716"
         },
         previousepisode: {
-          href: "http://api.tvmaze.com/episodes/1079686"
+          href: "http://api.tvmaze.com/episodes/668527"
         }
       }
     }
   },
   {
-    score: 15.4091425,
+    score: 12.145201,
     show: {
-      id: 41734,
-      url: "http://www.tvmaze.com/shows/41734/girls",
-      name: "GIRLS",
-      type: "Scripted",
-      language: "Mongolian",
+      id: 33621,
+      url: "http://www.tvmaze.com/shows/33621/slacker-cats",
+      name: "Slacker Cats",
+      type: "Animation",
+      language: "English",
       genres: ["Comedy"],
-      status: "Running",
-      runtime: 41,
-      premiered: null,
+      status: "Ended",
+      runtime: 30,
+      premiered: "2007-08-13",
+      officialSite: null,
+      schedule: {
+        time: "",
+        days: ["Monday"]
+      },
+      rating: {
+        average: null
+      },
+      weight: 0,
+      network: null,
+      webChannel: {
+        id: 145,
+        name: "Freeform",
+        country: {
+          name: "United States",
+          code: "US",
+          timezone: "America/New_York"
+        }
+      },
+      externals: {
+        tvrage: null,
+        thetvdb: 80486,
+        imdb: "tt1056456"
+      },
+      image: {
+        medium:
+          "http://static.tvmaze.com/uploads/images/medium_portrait/136/342482.jpg",
+        original:
+          "http://static.tvmaze.com/uploads/images/original_untouched/136/342482.jpg"
+      },
+      summary:
+        "<p>In the town of Wendell cats and humans can have conversations, and Buckley and Eddie are two feline friends who are no exceptions. But that's where their talents end. When they aren't roaming the town with no particular destination, they are lazing around the house mooching off their owners' hospitality.</p>",
+      updated: 1512097112,
+      _links: {
+        self: {
+          href: "http://api.tvmaze.com/shows/33621"
+        },
+        previousepisode: {
+          href: "http://api.tvmaze.com/episodes/1364536"
+        }
+      }
+    }
+  },
+  {
+    score: 12.145201,
+    show: {
+      id: 5982,
+      url: "http://www.tvmaze.com/shows/5982/cats-eyes",
+      name: "C.A.T.S. Eyes",
+      type: "Scripted",
+      language: "English",
+      genres: ["Drama", "Crime"],
+      status: "Ended",
+      runtime: 50,
+      premiered: "1985-04-12",
+      officialSite: null,
+      schedule: {
+        time: "21:00",
+        days: ["Saturday"]
+      },
+      rating: {
+        average: null
+      },
+      weight: 0,
+      network: {
+        id: 35,
+        name: "ITV",
+        country: {
+          name: "United Kingdom",
+          code: "GB",
+          timezone: "Europe/London"
+        }
+      },
+      webChannel: null,
+      externals: {
+        tvrage: 2949,
+        thetvdb: 253591,
+        imdb: "tt0149427"
+      },
+      image: {
+        medium:
+          "http://static.tvmaze.com/uploads/images/medium_portrait/23/58739.jpg",
+        original:
+          "http://static.tvmaze.com/uploads/images/original_untouched/23/58739.jpg"
+      },
+      summary:
+        "<p>An all-female detective agency, the 'Eyes Enquiry Agency', is formed as a front for the Home Office's new security operation, the 'Covert Activities Thames Section' or C.A.T.S. for short. Initially lead by ex-Oxford University President Pru Standfast, she was in charge of the unit that exeprienced ex-cop Maggie Forbes, computer geek Fredrica Smith, and from series two, Tessa Robinson who replaced Pru. Their contact with the Ministry was Nigel Beaumont. Made by Television South (TVS) for the ITV Network. Currently copies exist at ITV Archive, notably Maidstone Studios or at Leeds Archive and Disney own the actual rights through company acquisition although the paperwork is missing.</p>",
+      updated: 1562133716,
+      _links: {
+        self: {
+          href: "http://api.tvmaze.com/shows/5982"
+        },
+        previousepisode: {
+          href: "http://api.tvmaze.com/episodes/356188"
+        }
+      }
+    }
+  },
+  {
+    score: 12.145201,
+    show: {
+      id: 1927,
+      url: "http://www.tvmaze.com/shows/1927/cats-eye",
+      name: "Cat's Eye",
+      type: "Animation",
+      language: "Japanese",
+      genres: ["Comedy", "Action", "Adventure", "Anime"],
+      status: "Ended",
+      runtime: 30,
+      premiered: "1983-07-11",
       officialSite: null,
       schedule: {
         time: "",
@@ -74,282 +302,65 @@ const data = [
       rating: {
         average: null
       },
-      weight: 59,
+      weight: 0,
       network: {
-        id: 1672,
-        name: "UBS",
+        id: 137,
+        name: "NTV",
         country: {
-          name: "Mongolia",
-          code: "MN",
-          timezone: "Asia/Ulaanbaatar"
+          name: "Japan",
+          code: "JP",
+          timezone: "Asia/Tokyo"
         }
       },
       webChannel: null,
       externals: {
-        tvrage: null,
-        thetvdb: null,
-        imdb: "tt8709752"
+        tvrage: 10097,
+        thetvdb: 79835,
+        imdb: "tt0131160"
       },
       image: {
         medium:
-          "http://static.tvmaze.com/uploads/images/medium_portrait/191/478539.jpg",
+          "http://static.tvmaze.com/uploads/images/medium_portrait/11/27795.jpg",
         original:
-          "http://static.tvmaze.com/uploads/images/original_untouched/191/478539.jpg"
-      },
-      summary: null,
-      updated: 1556323042,
-      _links: {
-        self: {
-          href: "http://api.tvmaze.com/shows/41734"
-        }
-      }
-    }
-  },
-  {
-    score: 13.2268915,
-    show: {
-      id: 23542,
-      url: "http://www.tvmaze.com/shows/23542/good-girls",
-      name: "Good Girls",
-      type: "Scripted",
-      language: "English",
-      genres: ["Drama", "Comedy", "Crime"],
-      status: "Running",
-      runtime: 60,
-      premiered: "2018-02-26",
-      officialSite: "https://www.nbc.com/good-girls?nbc=1",
-      schedule: {
-        time: "22:00",
-        days: ["Sunday"]
-      },
-      rating: {
-        average: 7.2
-      },
-      weight: 94,
-      network: {
-        id: 1,
-        name: "NBC",
-        country: {
-          name: "United States",
-          code: "US",
-          timezone: "America/New_York"
-        }
-      },
-      webChannel: null,
-      externals: {
-        tvrage: null,
-        thetvdb: 328577,
-        imdb: "tt6474378"
-      },
-      image: {
-        medium:
-          "http://static.tvmaze.com/uploads/images/medium_portrait/182/456848.jpg",
-        original:
-          "http://static.tvmaze.com/uploads/images/original_untouched/182/456848.jpg"
+          "http://static.tvmaze.com/uploads/images/original_untouched/11/27795.jpg"
       },
       summary:
-        '<p><b>Good Girls</b> follows three "good girl" suburban wives and mothers who suddenly find themselves in desperate circumstances and decide to stop playing it safe, and risk everything to take their power back.</p>',
-      updated: 1574612816,
+        "<p>Cat's Eye is the most notorious group of art thieves in Japan. No one knows their identities, but for most of Tokyo, the mystery only heightens their allure. To bumbling detective Utsumi Toshio, Cat's Eye is a colossal pain in the neck. They outwit him and the rest of the police at every turn, making them look ridiculous. He would never dream of being in love with someone in Cat's Eye. Except he already is. Toshio has no idea that Cat's Eye is actually his girlfriend, Hitomi Kisugi, and her sisters Rui and Ai. Running the Cat's Eye Cafe next door to the police station, they bring ''hiding in plain sight'' to a whole new level. But thievery and romance are difficult to balance. Hitomi will need all the help she can get to stop Toshio from discovering her identity - especially when he starts having feelings for her alter-ego!</p>",
+      updated: 1562134985,
       _links: {
         self: {
-          href: "http://api.tvmaze.com/shows/23542"
+          href: "http://api.tvmaze.com/shows/1927"
         },
         previousepisode: {
-          href: "http://api.tvmaze.com/episodes/1616190"
-        },
-        nextepisode: {
-          href: "http://api.tvmaze.com/episodes/1753736"
+          href: "http://api.tvmaze.com/episodes/159457"
         }
       }
     }
   },
   {
-    score: 13.140919,
+    score: 12.145201,
     show: {
-      id: 32087,
-      url: "http://www.tvmaze.com/shows/32087/chicken-girls",
-      name: "Chicken Girls",
+      id: 24591,
+      url: "http://www.tvmaze.com/shows/24591/bad-cats",
+      name: "B.A.D. Cats",
       type: "Scripted",
       language: "English",
-      genres: ["Drama", "Children", "Music"],
-      status: "Running",
-      runtime: 16,
-      premiered: "2017-09-05",
-      officialSite:
-        "https://www.youtube.com/playlist?list=PLVewHiZp3_LPhqzbcZFmS3iuDm9HymTsy",
-      schedule: {
-        time: "18:00",
-        days: ["Tuesday"]
-      },
-      rating: {
-        average: 6.3
-      },
-      weight: 92,
-      network: null,
-      webChannel: {
-        id: 274,
-        name: "Brat",
-        country: {
-          name: "United States",
-          code: "US",
-          timezone: "America/New_York"
-        }
-      },
-      externals: {
-        tvrage: null,
-        thetvdb: 339854,
-        imdb: null
-      },
-      image: {
-        medium:
-          "http://static.tvmaze.com/uploads/images/medium_portrait/137/344365.jpg",
-        original:
-          "http://static.tvmaze.com/uploads/images/original_untouched/137/344365.jpg"
-      },
-      summary:
-        "<p>Rhyme and her friends — known by their 'ship name, \"The Chicken Girls\" — have been dancing together forever. But this year, everything's changing...</p>",
-      updated: 1574613729,
-      _links: {
-        self: {
-          href: "http://api.tvmaze.com/shows/32087"
-        },
-        previousepisode: {
-          href: "http://api.tvmaze.com/episodes/1762134"
-        }
-      }
-    }
-  },
-  {
-    score: 13.130612,
-    show: {
-      id: 1073,
-      url: "http://www.tvmaze.com/shows/1073/bomb-girls",
-      name: "Bomb Girls",
-      type: "Scripted",
-      language: "English",
-      genres: ["Drama", "Romance", "War"],
+      genres: ["Drama", "Action", "Crime"],
       status: "Ended",
       runtime: 60,
-      premiered: "2012-01-04",
+      premiered: "1980-01-04",
       officialSite: null,
       schedule: {
         time: "20:00",
-        days: ["Monday"]
-      },
-      rating: {
-        average: 8.5
-      },
-      weight: 69,
-      network: {
-        id: 67,
-        name: "Global",
-        country: {
-          name: "Canada",
-          code: "CA",
-          timezone: "America/Halifax"
-        }
-      },
-      webChannel: null,
-      externals: {
-        tvrage: 30600,
-        thetvdb: 254378,
-        imdb: "tt1955311"
-      },
-      image: {
-        medium:
-          "http://static.tvmaze.com/uploads/images/medium_portrait/7/17549.jpg",
-        original:
-          "http://static.tvmaze.com/uploads/images/original_untouched/7/17549.jpg"
-      },
-      summary:
-        "<p>Set in the 1940s, <b>Bomb Girls</b> tells the remarkable stories of the women who risked their lives in a munitions factory building bombs for the Allied forces fighting on the European front. The series delves into the lives of these exceptional women – peers, friends and rivals – who find themselves thrust into new worlds and changed profoundly as they are liberated from their home and social restrictions.</p>",
-      updated: 1574275911,
-      _links: {
-        self: {
-          href: "http://api.tvmaze.com/shows/1073"
-        },
-        previousepisode: {
-          href: "http://api.tvmaze.com/episodes/108024"
-        }
-      }
-    }
-  },
-  {
-    score: 12.817363,
-    show: {
-      id: 35096,
-      url: "http://www.tvmaze.com/shows/35096/girls-incarcerated",
-      name: "Girls Incarcerated",
-      type: "Documentary",
-      language: "English",
-      genres: ["Crime"],
-      status: "To Be Determined",
-      runtime: 45,
-      premiered: "2018-03-02",
-      officialSite: "https://www.netflix.com/title/80185178",
-      schedule: {
-        time: "",
         days: ["Friday"]
       },
       rating: {
         average: null
       },
-      weight: 27,
-      network: null,
-      webChannel: {
-        id: 1,
-        name: "Netflix",
-        country: null
-      },
-      externals: {
-        tvrage: null,
-        thetvdb: null,
-        imdb: null
-      },
-      image: {
-        medium:
-          "http://static.tvmaze.com/uploads/images/medium_portrait/147/368834.jpg",
-        original:
-          "http://static.tvmaze.com/uploads/images/original_untouched/147/368834.jpg"
-      },
-      summary:
-        "<p>At Madison Juvenile Correctional Facility in Indiana, teen girls struggle with conflict and heartbreak as they try to turn their lives around. Fights, friendships, dating, rules. Teenage life is full of drama. But behind bars, the stakes are so much higher.</p>",
-      updated: 1574457105,
-      _links: {
-        self: {
-          href: "http://api.tvmaze.com/shows/35096"
-        },
-        previousepisode: {
-          href: "http://api.tvmaze.com/episodes/1673379"
-        }
-      }
-    }
-  },
-  {
-    score: 12.77333,
-    show: {
-      id: 6771,
-      url: "http://www.tvmaze.com/shows/6771/the-powerpuff-girls",
-      name: "The Powerpuff Girls",
-      type: "Animation",
-      language: "English",
-      genres: ["Comedy", "Action", "Science-Fiction"],
-      status: "Running",
-      runtime: 15,
-      premiered: "2016-04-04",
-      officialSite:
-        "https://www.cartoonnetwork.com/video/powerpuff-girls/index.html",
-      schedule: {
-        time: "17:30",
-        days: ["Sunday"]
-      },
-      rating: {
-        average: 6.1
-      },
-      weight: 76,
+      weight: 0,
       network: {
-        id: 11,
-        name: "Cartoon Network",
+        id: 3,
+        name: "ABC",
         country: {
           name: "United States",
           code: "US",
@@ -359,52 +370,52 @@ const data = [
       webChannel: null,
       externals: {
         tvrage: null,
-        thetvdb: 307473,
-        imdb: "tt4718304"
+        thetvdb: 76114,
+        imdb: "tt0080193"
       },
       image: {
         medium:
-          "http://static.tvmaze.com/uploads/images/medium_portrait/60/151357.jpg",
+          "http://static.tvmaze.com/uploads/images/medium_portrait/93/234970.jpg",
         original:
-          "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+          "http://static.tvmaze.com/uploads/images/original_untouched/93/234970.jpg"
       },
       summary:
-        "<p>The city of Townsville may be a beautiful, bustling metropolis, but don't be fooled! There's evil afoot! And only three things can keep the bad guys at bay: Blossom, Bubbles and Buttercup, three super-powered little girls, known to their fans (and villains everywhere) as <b>The Powerpuff Girls</b>. Juggling school, bedtimes, and beating up giant monsters may be daunting, but together the Powerpuff Girls are up to the task. Battling a who's who of evil, they show what it really means to \"fight like a girl.\"</p>",
-      updated: 1573685920,
+        '<p>Nick Donovan and Ocee James were two former race car drivers who joined the LAPD as part of the B.A.D. C.A.T. squad (which stood for Burglary Auto Detail Commercial Auto Thefts). Using their superior driving skills, the two mainly saw fit to run the bad guys off the road rather than question them. Their superior Captain Nathan publicly chastised the two, but privately encouraged their "loose cannon" style. Officer Samantha Jensen would occasionally lend a hand when a more feminine approach was called for. Also seen were Ma, who owned a bar which the boys frequented, and Rodney, a former car thief trying to get on the straight and narrow.</p>',
+      updated: 1484845751,
       _links: {
         self: {
-          href: "http://api.tvmaze.com/shows/6771"
+          href: "http://api.tvmaze.com/shows/24591"
         },
         previousepisode: {
-          href: "http://api.tvmaze.com/episodes/1662010"
+          href: "http://api.tvmaze.com/episodes/1044473"
         }
       }
     }
   },
   {
-    score: 12.721148,
+    score: 12.145201,
     show: {
-      id: 33320,
-      url: "http://www.tvmaze.com/shows/33320/derry-girls",
-      name: "Derry Girls",
-      type: "Scripted",
+      id: 33952,
+      url: "http://www.tvmaze.com/shows/33952/big-cats",
+      name: "Big Cats",
+      type: "Documentary",
       language: "English",
-      genres: ["Comedy"],
-      status: "Running",
-      runtime: 30,
-      premiered: "2018-01-04",
-      officialSite: "http://www.channel4.com/programmes/derry-girls",
+      genres: ["Nature"],
+      status: "To Be Determined",
+      runtime: 60,
+      premiered: "2018-01-11",
+      officialSite: "http://www.bbc.co.uk/programmes/p05q599b",
       schedule: {
-        time: "22:00",
-        days: ["Tuesday"]
+        time: "20:00",
+        days: ["Thursday"]
       },
       rating: {
-        average: 8
+        average: 7.2
       },
-      weight: 94,
+      weight: 0,
       network: {
-        id: 45,
-        name: "Channel 4",
+        id: 12,
+        name: "BBC One",
         country: {
           name: "United Kingdom",
           code: "GB",
@@ -414,134 +425,135 @@ const data = [
       webChannel: null,
       externals: {
         tvrage: null,
-        thetvdb: 338903,
-        imdb: "tt7120662"
+        thetvdb: 340434,
+        imdb: "tt7860116"
       },
       image: {
         medium:
-          "http://static.tvmaze.com/uploads/images/medium_portrait/184/460240.jpg",
+          "http://static.tvmaze.com/uploads/images/medium_portrait/141/354562.jpg",
         original:
-          "http://static.tvmaze.com/uploads/images/original_untouched/184/460240.jpg"
+          "http://static.tvmaze.com/uploads/images/original_untouched/141/354562.jpg"
       },
       summary:
-        "<p>16-year-old Erin Quinn lives with her uncompromising mother, her long-suffering father and the fearsome ‘Granda Joe', a man whose love for his daughters and granddaughters is surpassed only by his contempt for his son-in-law.</p><p>It's the early 90s, and Erin is used to seeing her country on the nightly news and speaking in acronyms (The IRA, The UDA, The RUC). This is a time of armed police in armoured Land Rovers and British Army check points. But it's also the time of Murder She Wrote, The Cranberries, MJ and Lisa Marie, Doc Martens, bomber jackets, The X Files, Nirvana and Wayne's World. And while The Troubles may hang over her home town, Erin has troubles of her own</p>",
-      updated: 1573602335,
+        "<p>Cats are naturally secretive, elusive and cryptic animals. Only now have the latest developments in filming technology, and a surge in cat research, enabled us to bring the cat superstars out of the shadows.</p><p>Combining fascinating behaviour with amazing stories, <b>Big Cats</b> reflects the true nature of cats - revealing how they still have the power to surprise.</p>",
+      updated: 1545634874,
       _links: {
         self: {
-          href: "http://api.tvmaze.com/shows/33320"
+          href: "http://api.tvmaze.com/shows/33952"
         },
         previousepisode: {
-          href: "http://api.tvmaze.com/episodes/1631064"
+          href: "http://api.tvmaze.com/episodes/1388693"
         }
       }
     }
   },
   {
-    score: 12.302082,
+    score: 11.520605,
     show: {
-      id: 722,
-      url: "http://www.tvmaze.com/shows/722/the-golden-girls",
-      name: "The Golden Girls",
-      type: "Scripted",
+      id: 43903,
+      url: "http://www.tvmaze.com/shows/43903/the-secret-lives-of-big-cats",
+      name: "The Secret Lives of Big Cats",
+      type: "Documentary",
       language: "English",
-      genres: ["Drama", "Comedy"],
+      genres: ["Nature"],
       status: "Ended",
       runtime: 30,
-      premiered: "1985-09-14",
-      officialSite: null,
+      premiered: "2019-09-12",
+      officialSite:
+        "https://curiositystream.com/series/408/the-secret-lives-of-big-cats",
       schedule: {
-        time: "21:00",
-        days: []
-      },
-      rating: {
-        average: 8.3
-      },
-      weight: 62,
-      network: {
-        id: 1,
-        name: "NBC",
-        country: {
-          name: "United States",
-          code: "US",
-          timezone: "America/New_York"
-        }
-      },
-      webChannel: null,
-      externals: {
-        tvrage: 5820,
-        thetvdb: 71292,
-        imdb: "tt0088526"
-      },
-      image: {
-        medium:
-          "http://static.tvmaze.com/uploads/images/medium_portrait/6/15097.jpg",
-        original:
-          "http://static.tvmaze.com/uploads/images/original_untouched/6/15097.jpg"
-      },
-      summary:
-        "<p><b>The Golden Girls</b> follows four South Florida seniors sharing a house, their dreams, and a whole lot of cheesecake. Bright, promiscuous, clueless, and hilarious, these lovely mismatched ladies form the perfect circle of friends.</p>",
-      updated: 1575092302,
-      _links: {
-        self: {
-          href: "http://api.tvmaze.com/shows/722"
-        },
-        previousepisode: {
-          href: "http://api.tvmaze.com/episodes/64040"
-        }
-      }
-    }
-  },
-  {
-    score: 12.227768,
-    show: {
-      id: 42924,
-      url: "http://www.tvmaze.com/shows/42924/girls-cruise",
-      name: "Girls Cruise",
-      type: "Reality",
-      language: "English",
-      genres: [],
-      status: "Running",
-      runtime: 60,
-      premiered: "2019-07-15",
-      officialSite: "http://www.vh1.com/shows/girls-cruise",
-      schedule: {
-        time: "21:00",
-        days: ["Monday"]
+        time: "",
+        days: ["Thursday"]
       },
       rating: {
         average: null
       },
-      weight: 59,
-      network: {
-        id: 55,
-        name: "VH1",
+      weight: 0,
+      network: null,
+      webChannel: {
+        id: 188,
+        name: "CuriosityStream",
         country: {
           name: "United States",
           code: "US",
           timezone: "America/New_York"
+        }
+      },
+      externals: {
+        tvrage: null,
+        thetvdb: 369755,
+        imdb: null
+      },
+      image: {
+        medium:
+          "http://static.tvmaze.com/uploads/images/medium_portrait/211/529359.jpg",
+        original:
+          "http://static.tvmaze.com/uploads/images/original_untouched/211/529359.jpg"
+      },
+      summary:
+        "<p>The 7 big cats are some of the most powerful predators on Earth. But at the same time, these majestic creatures are shy and affectionate, with other qualities we never knew. Technology is giving us the tools to see them in more detail than ever, to learn the intricacies of their lives. In this 7-part CuriosityStream original series, travel to some of the most dangerous and remote locations on the planet — where big cats reign and nature is at its most savage. Each episode highlights the individual stories of one of the seven species — Lion, tiger, cheetah, leopard, jaguar, snow leopard, and puma. See their extraordinary, intimate natural behavior recorded with new high-tech night vision systems and super-slow-motion cameras. These are the incredible and unexpected stories of the world's most charismatic predators: the big cats.</p>",
+      updated: 1568828655,
+      _links: {
+        self: {
+          href: "http://api.tvmaze.com/shows/43903"
+        },
+        previousepisode: {
+          href: "http://api.tvmaze.com/episodes/1717796"
+        }
+      }
+    }
+  },
+  {
+    score: 11.318569,
+    show: {
+      id: 33196,
+      url: "http://www.tvmaze.com/shows/33196/jo-brands-cats-and-kittens",
+      name: "Jo Brand's Cats and Kittens",
+      type: "Documentary",
+      language: "English",
+      genres: [],
+      status: "Running",
+      runtime: 60,
+      premiered: "2017-11-14",
+      officialSite: "http://www.channel5.com/show/jo-brands-cats-kittens/",
+      schedule: {
+        time: "20:00",
+        days: ["Tuesday"]
+      },
+      rating: {
+        average: null
+      },
+      weight: 0,
+      network: {
+        id: 135,
+        name: "Channel 5",
+        country: {
+          name: "United Kingdom",
+          code: "GB",
+          timezone: "Europe/London"
         }
       },
       webChannel: null,
       externals: {
         tvrage: null,
-        thetvdb: 365645,
-        imdb: "tt10466426"
+        thetvdb: 337857,
+        imdb: null
       },
       image: {
         medium:
-          "http://static.tvmaze.com/uploads/images/medium_portrait/207/518599.jpg",
+          "http://static.tvmaze.com/uploads/images/medium_portrait/135/338993.jpg",
         original:
-          "http://static.tvmaze.com/uploads/images/original_untouched/207/518599.jpg"
+          "http://static.tvmaze.com/uploads/images/original_untouched/135/338993.jpg"
       },
       summary:
-        "<p>Lil' Kim and her friends Chilli, Mya, Vena E., B. Simone, Tiffany Panhilason and Char Defrancesco set sail for the ultimate Caribbean vacation filled with hilarious antics, emotional breakthroughs and spicy romances.</p>",
-      updated: 1574896429,
+        "<p>Documentary series presented by Jo Brand, following the RSPCA inspectors, vets and volunteers who work tirelessly to save Britain's cats and kittens from harm.</p>",
+      updated: 1512303399,
       _links: {
         self: {
-          href: "http://api.tvmaze.com/shows/42924"
+          href: "http://api.tvmaze.com/shows/33196"
         },
         previousepisode: {
-          href: "http://api.tvmaze.com/episodes/1720843"
+          href: "http://api.tvmaze.com/episodes/1365944"
         }
       }
     }
