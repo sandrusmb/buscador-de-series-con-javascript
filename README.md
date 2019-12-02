@@ -1,3 +1,14 @@
+PASOS
+
+[x]Crear el repositorio
+
+[x]Dibujar el diagrama
+
+[] HTML y CSS
+[x]Limpiar archivos del kit
+
+---
+
 ![Adalab](_src/assets/images/logo-adalab-80px.png)
 
 # Adalab web starter kit
