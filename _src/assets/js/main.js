@@ -66,12 +66,4 @@ searchButton.addEventListener("click", searchButtonHandler);
 
 // Cambiar de color de la tarjeta cuando es seleccionada. Escuchar el evento.
 
-const movie = document.querySelector(".movie__list__item")
-
-favHandler(){
-movie.classList.toggle("js-fav");
-}
-
-movie.addEventListener("click", favHandler);
-
-//PENDIENTE: AÑADIR IMAGEN POR DEFECTO CUANDO ES NULL
+const movie = document.querySelector(".movie__list__item");
