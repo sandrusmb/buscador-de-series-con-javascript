@@ -1,5 +1,7 @@
 "use strict";
 
+import { link } from "fs";
+
 //creo el array donde voy a guardar las búsquedas en mi api
 let savedData = [];
 let imageDefault = "https://via.placeholder.com/210x295/ffffff/666666/?text=TV";
@@ -13,11 +15,7 @@ const img = document.querySelector(".movie__list__item__img");
 
 //función para pintar una card: meter lis dentro del ul y sustituir los datos fakes por la "ruta" de los data verdaderos
 function paintCard(movie) {
-  movieList.innerHTML += `<li class="movie__list__item js-show" id=""><h2 class="movie__list__item__title">${movie.show.name}</h2><img class="movie__list__item__img" src="${movie.show.image.medium}" alt="${movie.show.name}" /></li>`;
-  const img = document.querySelector(".movie__list__item__img");
-  if (movie.show.image === null) {
-    img.src = imageDefault;
-  }
+  movieList.innerHTML += `<li class="movie__list__item" id=""><h2 class="movie__list__item__title">${movie.show.name}</h2><img class="movie__list__item__img" src="${movie.show.image.medium}" alt="${movie.show.name}" /></li>`;
 }
 
 //llamar a la función con una peli en concreto para ver si funciona
@@ -50,7 +48,6 @@ function getDataFromServer() {
     .then(function(data) {
       deleteAllCards();
       paintAllCards(data);
-      console.log("hola");
       savedData = data;
     });
 }
@@ -67,4 +64,14 @@ function searchButtonHandler(event) {
 
 searchButton.addEventListener("click", searchButtonHandler);
 
-// Añadir una clase a la card cuando es favorita. Escuchar el evento.
+// Cambiar de color de la tarjeta cuando es seleccionada. Escuchar el evento.
+
+const movie = document.querySelector(".movie__list__item")
+
+favHandler(){
+movie.classList.toggle("js-fav");
+}
+
+movie.addEventListener("click", favHandler);
+
+//PENDIENTE: AÑADIR IMAGEN POR DEFECTO CUANDO ES NULL

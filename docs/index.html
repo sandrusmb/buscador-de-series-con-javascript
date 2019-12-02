@@ -10,13 +10,35 @@
     </head>
     
     <body>
-        <div class="page">
-            <header class="page__header">Header</header>
-            <main class="page__main">Main</main> <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
+        <!-- título de la página -->
+        <header class="header">
+             <h1 class="header__title">Buscador de series</h1>
 
-            <a
-            class="link__github" href="https://github.com" target="_blank">GitHub</a>
-        </div>
+        </header>
+        <main class="global">
+            <div class="container">
+                <!-- formulario -->
+                <form method="" action="" class="container__form">
+                    <input type="text" class="container__form__input" />
+                    <button class="container__form__button">Buscar</button>
+                </form>
+                <!-- listado de favoritos -->
+                <aside class="aside">
+                     <h2 class="aside__title">Mis series favoritas</h2>
+
+                    <ul class="aside__list">
+                        <li></li>
+                    </ul>
+                </aside>
+            </div>
+            <!-- listado de pelis -->
+            <section class="movie">
+                <ul class="movie__list"></ul>
+            </section>
+        </main>
+        <!-- scripts -->
+        <script type="text/javascript" src="./assets/js/data.js"></script>
+        <script type="text/javascript" src="./assets/js/main.js"></script>
     </body>
 
 </html>
