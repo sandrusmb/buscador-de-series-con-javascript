@@ -97,6 +97,7 @@ body {
   flex-wrap: wrap;
   width: 70vw;
   padding: 0px;
+
   &__item {
     //border: 1px solid grey;
     background: pink;
@@ -106,6 +107,7 @@ body {
     &__title {
       text-align: center;
       font-size: 1em;
+      max-width: 147px;
     }
 
     &__img {
