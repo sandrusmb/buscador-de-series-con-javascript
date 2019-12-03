@@ -192,3 +192,9 @@ function getFavsFromLocalStorage() {
     favData = [];
   }
 }
+
+// mirar si cuando busque, hay alguna tarjeta marcada como fav. Hacer un searchInSaveDataById pero del favData que devuelva true (que me lo pinte de rojo >> poner la clase) or false.
+
+// cuando demos (hacer el listener) a la x de los fav, que me lo borre del array de favData. Por tanto, repintar favs. Poner un data-id también en los li de aside(fav). Meto el id cuando se pinta la tarjeta y lo busco cuando se produce el clic.(usar el setAttribute, getAttribute, currentTarget,parentElement).
+
+//Cuando le de a la x, que se despinte la card y que se ponga rosa.
