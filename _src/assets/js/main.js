@@ -22,11 +22,9 @@ function paintCard(movie) {
   const p = document.createElement("p");
   const img = document.createElement("img");
   li.classList.add("movie__list__item");
-
   if (searchInFavDataById(movie.show.id) !== undefined) {
     li.classList.add("js-fav");
   }
-
   li.setAttribute("data-id", movie.show.id);
   p.classList.add("movie__list__item__title");
   img.classList.add("movie__list__item__img");
@@ -105,8 +103,6 @@ const movie = document.querySelector(".movie__list__item");
 function liClickHandler(event) {
   const li = event.currentTarget;
   const id = li.getAttribute("data-id");
-  //TO DO: ir a buscar la movie. ¿De dónde la saco? ¿De dónde saco el id?
-
   if (searchInFavDataById(id) !== undefined) {
     deleteMovieFromFav(id);
   } else {
@@ -148,10 +144,11 @@ function paintFavCard(movie) {
 // función de pintar todas las cards de fav
 
 function paintFavAllCards(movieArray) {
+  deleteAllFavCards();
   for (let i = 0; i < movieArray.length; i++) {
     paintFavCard(movieArray[i]);
   }
-  divClickhandler();
+  divListener();
 }
 
 paintFavAllCards(favData);
@@ -218,10 +215,12 @@ function getFavsFromLocalStorage() {
 //Cuando le de a la x, que se despinte la card y que se ponga rosa.
 
 //¡¡¡¡¡¡¡¡¡¡¡¡¡¡REVISAR CON MIGUEL!!!!!!!!!!!!!
-function divClickhandler() {
+function divListener() {
   const div = document.querySelectorAll(".aside__list__item__delete");
 
   for (let i = 0; i < div.length; i++) {
     div[i].addEventListener("click", liClickHandler);
   }
 }
+
+//divClickhandler()
