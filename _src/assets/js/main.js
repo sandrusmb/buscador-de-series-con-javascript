@@ -13,18 +13,20 @@ const input = document.querySelector(".container__form__input");
 //voy a por el img
 const img = document.querySelector(".movie__list__item__img");
 
-//función para pintar una card: meter lis dentro del ul y sustituir los datos fakes por la "ruta" de los data verdaderos
-/* function paintCard(movie) {
-  movieList.innerHTML += `<li class="movie__list__item" id=""><h2 class="movie__list__item__title">${movie.show.name}</h2><img class="movie__list__item__img" src="${movie.show.image.medium}" alt="${movie.show.name}" /></li>`;
-} */
-
 getFavsFromLocalStorage();
+
+//función para pintar una card
 
 function paintCard(movie) {
   const li = document.createElement("li");
   const p = document.createElement("p");
   const img = document.createElement("img");
   li.classList.add("movie__list__item");
+
+  if (searchInFavDataById(movie.show.id) !== undefined) {
+    li.classList.add("js-fav");
+  }
+
   li.setAttribute("data-id", movie.show.id);
   p.classList.add("movie__list__item__title");
   img.classList.add("movie__list__item__img");
@@ -54,6 +56,7 @@ function getImageSrc(movie) {
 //función pintar todas las cards. Recorrer el array con un for poniendo por parámetros el array que recibiré cuando sea.
 
 function paintAllCards(moviesArray) {
+  deleteAllCards();
   for (i = 0; i < moviesArray.length; i++) {
     paintCard(moviesArray[i]);
   }
@@ -76,7 +79,6 @@ function getDataFromServer() {
       return response.json();
     })
     .then(function(data) {
-      deleteAllCards();
       paintAllCards(data);
       savedData = data;
     });
@@ -103,15 +105,16 @@ const movie = document.querySelector(".movie__list__item");
 function liClickHandler(event) {
   const li = event.currentTarget;
   const id = li.getAttribute("data-id");
-  //TODO: ir a buscar la movie. ¿De dónde la saco? ¿De dónde saco el id?
-  const movie = searchInSaveDataById(id);
-  if (li.classList.contains("js-fav")) {
-    deleteMovieFromFav(movie);
+  //TO DO: ir a buscar la movie. ¿De dónde la saco? ¿De dónde saco el id?
+
+  if (searchInFavDataById(id) !== undefined) {
+    deleteMovieFromFav(id);
   } else {
+    const movie = searchInSaveDataById(id);
     addMovieToFav(movie);
   }
-  li.classList.toggle("js-fav");
   deleteAllFavCards();
+  paintAllCards(savedData);
   paintFavAllCards(favData);
   saveFavInLocalStorage();
 }
@@ -129,6 +132,7 @@ function paintFavCard(movie) {
   p.innerHTML = movie.show.name;
   div.classList.add("aside__list__item__delete");
   div.innerHTML = "x";
+  div.setAttribute("data-id", movie.show.id);
   img.src = getImageSrc(movie);
   img.alt = movie.show.name;
   li.appendChild(img);
@@ -147,6 +151,7 @@ function paintFavAllCards(movieArray) {
   for (let i = 0; i < movieArray.length; i++) {
     paintFavCard(movieArray[i]);
   }
+  divClickhandler();
 }
 
 paintFavAllCards(favData);
@@ -168,10 +173,23 @@ function searchInSaveDataById(idToSearch) {
   }
 }
 
+function searchInFavDataById(idToSearch) {
+  for (let i = 0; i < favData.length; i++) {
+    const movie = favData[i];
+    if (movie.show.id === parseInt(idToSearch)) {
+      return movie;
+    }
+  }
+}
+
 // borrar de la lista de favoritos. mirar el id de la peli que quiero quitar y hacer delete.
 
-function deleteMovieFromFav(movieToDelete) {
-  favData.splice(favData.indexOf(movieToDelete), 1);
+function deleteMovieFromFav(movieIdToDelete) {
+  for (let i = 0; i < favData.length; i++) {
+    if (favData[i].show.id === parseInt(movieIdToDelete)) {
+      favData.splice(i, 1);
+    }
+  }
 }
 
 // borrar tarjetas de favoritos
@@ -198,3 +216,12 @@ function getFavsFromLocalStorage() {
 // cuando demos (hacer el listener) a la x de los fav, que me lo borre del array de favData. Por tanto, repintar favs. Poner un data-id también en los li de aside(fav). Meto el id cuando se pinta la tarjeta y lo busco cuando se produce el clic.(usar el setAttribute, getAttribute, currentTarget,parentElement).
 
 //Cuando le de a la x, que se despinte la card y que se ponga rosa.
+
+//¡¡¡¡¡¡¡¡¡¡¡¡¡¡REVISAR CON MIGUEL!!!!!!!!!!!!!
+function divClickhandler() {
+  const div = document.querySelectorAll(".aside__list__item__delete");
+
+  for (let i = 0; i < div.length; i++) {
+    div[i].addEventListener("click", liClickHandler);
+  }
+}
