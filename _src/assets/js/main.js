@@ -2,6 +2,7 @@
 
 //creo el array donde voy a guardar las búsquedas en mi api
 let savedData = [];
+let favData = [];
 let imageDefault = "https://via.placeholder.com/210x295/ffffff/666666/?text=TV";
 
 //Voy a buscar el ul del listado de pelis
@@ -17,11 +18,14 @@ const img = document.querySelector(".movie__list__item__img");
   movieList.innerHTML += `<li class="movie__list__item" id=""><h2 class="movie__list__item__title">${movie.show.name}</h2><img class="movie__list__item__img" src="${movie.show.image.medium}" alt="${movie.show.name}" /></li>`;
 } */
 
+getFavsFromLocalStorage();
+
 function paintCard(movie) {
   const li = document.createElement("li");
   const p = document.createElement("p");
   const img = document.createElement("img");
   li.classList.add("movie__list__item");
+  li.setAttribute("data-id", movie.show.id);
   p.classList.add("movie__list__item__title");
   img.classList.add("movie__list__item__img");
   p.innerHTML = movie.show.name;
@@ -98,7 +102,18 @@ const movie = document.querySelector(".movie__list__item");
 
 function liClickHandler(event) {
   const li = event.currentTarget;
+  const id = li.getAttribute("data-id");
+  //TODO: ir a buscar la movie. ¿De dónde la saco? ¿De dónde saco el id?
+  const movie = searchInSaveDataById(id);
+  if (li.classList.contains("js-fav")) {
+    deleteMovieFromFav(movie);
+  } else {
+    addMovieToFav(movie);
+  }
   li.classList.toggle("js-fav");
+  deleteAllFavCards();
+  paintFavAllCards(favData);
+  saveFavInLocalStorage();
 }
 
 // función que pinta la card de favoritos
@@ -122,4 +137,58 @@ function paintFavCard(movie) {
   favList.appendChild(li);
 }
 
-paintFavCard(data[4]);
+//paintFavCard(data[4]);
+//paintFavCard(data[3]);
+//paintFavCard(data[2]);
+
+// función de pintar todas las cards de fav
+
+function paintFavAllCards(movieArray) {
+  for (let i = 0; i < movieArray.length; i++) {
+    paintFavCard(movieArray[i]);
+  }
+}
+
+paintFavAllCards(favData);
+
+// queremos que al clicar en una card se añada a favData el objeto de la movie correspondiente a la tarjeta a la que he cliclado
+
+function addMovieToFav(movie) {
+  favData.push(movie);
+}
+
+// función que sabe buscar una pelicula en el saveData y me la devuelva
+
+function searchInSaveDataById(idToSearch) {
+  for (let i = 0; i < savedData.length; i++) {
+    const movie = savedData[i];
+    if (movie.show.id === parseInt(idToSearch)) {
+      return movie;
+    }
+  }
+}
+
+// borrar de la lista de favoritos. mirar el id de la peli que quiero quitar y hacer delete.
+
+function deleteMovieFromFav(movieToDelete) {
+  favData.splice(favData.indexOf(movieToDelete), 1);
+}
+
+// borrar tarjetas de favoritos
+
+function deleteAllFavCards() {
+  favList.innerHTML = "";
+}
+
+// localstorage
+
+function saveFavInLocalStorage() {
+  localStorage.setItem("myFavs", JSON.stringify(favData));
+}
+
+function getFavsFromLocalStorage() {
+  favData = JSON.parse(localStorage.getItem("myFavs"));
+  if (favData === null) {
+    favData = [];
+  }
+}

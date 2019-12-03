@@ -73,10 +73,11 @@ body {
     padding: 0px;
 
     &__item {
-      border: 1px solid yellow;
+      border: 2px solid brown;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      margin: 5px 0;
 
       &__img {
         width: 63px;
