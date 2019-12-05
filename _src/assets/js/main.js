@@ -21,7 +21,9 @@ function paintCard(movie) {
   const li = document.createElement("li");
   const p = document.createElement("p");
   const img = document.createElement("img");
+  const pSchedule = document.createElement("p");
   li.classList.add("movie__list__item");
+  pSchedule.classList.add("movie__list__item__schedule");
   if (searchInFavDataById(movie.show.id) !== undefined) {
     li.classList.add("js-fav");
   }
@@ -29,10 +31,12 @@ function paintCard(movie) {
   p.classList.add("movie__list__item__title");
   img.classList.add("movie__list__item__img");
   p.innerHTML = movie.show.name;
+  pSchedule.innerHTML = movie.show.schedule.time;
   img.src = getImageSrc(movie);
   img.alt = movie.show.name;
   li.appendChild(p);
   li.appendChild(img);
+  li.appendChild(pSchedule);
   // evento sobre el li para pintar fav
   li.addEventListener("click", liClickHandler);
   movieList.appendChild(li);
@@ -224,3 +228,15 @@ function divListener() {
 }
 
 //divClickhandler()
+
+const examButton = document.querySelector(".container__form__exam");
+
+function examButtonClickHandler(event) {
+  event.preventDefault();
+  console.log("hola");
+  for (let i = 0; i < savedData.length; i++) {
+    console.log(savedData[i].show.name);
+  }
+}
+
+examButton.addEventListener("click", examButtonClickHandler);
