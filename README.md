@@ -63,3 +63,5 @@ Necesitarás instalar [Node.js](https://nodejs.org/) y [Gulp](https://gulpjs.com
 1. Descarga o clona el repositorio
 2. Instala las dependencias locales con `npm install`
 3. Arranca el kit con `gulp`
+
+[!Interfaz](https://github.com/sandrusmb/modulo-2-evaluacion-final-sandrusmb/blob/master/_src/assets/images/interfaz.png)
